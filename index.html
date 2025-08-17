@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uğur Yüce — Kişisel Site</title>
+  <meta name="description" content="Uğur Yüce'nin kişisel web sitesi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    :root { --fg:#111; --muted:#555; --card:#fff; --bg: #f5f7fb; }
+    *{box-sizing:border-box} body{margin:0;font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto; color:var(--fg); background:var(--bg);}
+    .wrap{max-width:860px;margin:8vh auto;padding:24px}
+    .card{background:var(--card);border-radius:20px;box-shadow:0 6px 24px rgba(0,0,0,.08);padding:32px}
+    h1{font-size:36px;margin:0 0 8px} h2{font-size:18px;color:var(--muted);margin:0 0 24px}
+    p{margin:0 0 16px}
+    .links a{display:inline-block;margin-right:12px;text-decoration:none;padding:10px 14px;border-radius:12px;border:1px solid #e6e8ef}
+    .links a:hover{box-shadow:0 4px 14px rgba(0,0,0,.06)}
+    footer{margin-top:18px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Uğur Yüce</h1>
+      <h2>Frontend Developer</h2>
+      <p>Merhaba! Basit kişisel siteme hoş geldin. Yakında projelerimi ve yazılarımı burada paylaşacağım.</p>
+      <div class="links">
+        <a href="mailto:ugur@uguryuce.com">E-posta</a>
+        <a href="https://github.com/uguryuce" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/..." target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+      <footer>© <span id="y"></span> Uğur Yüce</footer>
+    </div>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+</body>
+</html>
